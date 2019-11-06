@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">uygulama</string>
+    <string name="bilmece_metni">bilmecenin sorusu </string>
+    <string name="SALDIR">saldir</string>
+    <string name="yemekye">yemek ye</string>
+    <string name="uyu">uyu</string>
+
+</resources>

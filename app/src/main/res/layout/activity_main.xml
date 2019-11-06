@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/karakter"
+        android:layout_width="199dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:text="@string/bilmece_metni"
+        app:layout_constraintEnd_toEndOf="@+id/uyu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saldir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:gravity="center_horizontal"
+        android:text="@string/SALDIR"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yemek"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/yemek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:gravity="center_horizontal"
+        android:text="@string/yemekye"
+        app:layout_constraintStart_toEndOf="@+id/saldir"
+        app:layout_constraintTop_toBottomOf="@+id/karakter" />
+
+    <Button
+        android:id="@+id/uyu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/uyu"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yemek"
+        app:layout_constraintStart_toEndOf="@+id/yemek" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/karakter"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="karakterin ismini giriniz"
+        app:layout_constraintEnd_toEndOf="@+id/uyu"
+        app:layout_constraintTop_toBottomOf="@+id/saldir" />
+
+
+</android.support.constraint.ConstraintLayout>
